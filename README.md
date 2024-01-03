@@ -9,7 +9,7 @@
 <h2>About the project</h2>
 <p>MERN Stack pop culture site featuring user posts written posts accompanied by fun and modern visuals. Posts and user information are uploaded to MongoDB database with password encryption</p>
 
-👉 Live Demo: <a href='https://frabjous-biscochitos-f7a959.netlify.app/'>J-Street Clothing Store Demo</a>
+👉 Live Demo: Coming Soon
 
 <h3>Built with:</h3>
 
