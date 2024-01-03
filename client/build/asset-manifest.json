@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f0b9bea0.css",
+    "main.js": "/static/js/main.27fdb13f.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/login-background.PNG": "/static/media/login-background.95130a74296037528c1e.PNG",
+    "static/media/gaming.png": "/static/media/gaming.138c03842087178b457a.png",
+    "static/media/instagram.png": "/static/media/instagram.8bae4aa0089fc978b63b.png",
+    "static/media/title-bar.PNG": "/static/media/title-bar.2d3dc326e7e3503575ca.PNG",
+    "static/media/Home.png": "/static/media/Home.eb223d5c00d5987f3808.png",
+    "static/media/title-bar-small.PNG": "/static/media/title-bar-small.a720c9b36e4a99172610.PNG",
+    "static/media/prize.png": "/static/media/prize.5dd5835759e5b1cd6cd5.png",
+    "static/media/square-logo.png": "/static/media/square-logo.c56f16132366431322a1.png",
+    "static/media/Cross.png": "/static/media/Cross.4d5d236dea7fc5484dad.png",
+    "index.html": "/index.html",
+    "main.f0b9bea0.css.map": "/static/css/main.f0b9bea0.css.map",
+    "main.27fdb13f.js.map": "/static/js/main.27fdb13f.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0b9bea0.css",
+    "static/js/main.27fdb13f.js"
+  ]
+}
