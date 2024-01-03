@@ -28,7 +28,7 @@ export default function TopPost({_id, title, category, summary, cover, createdAt
           <div className="ranking-overlay">
             <div className="ranking">{rank}</div>
           </div>
-          <img src={`http://localhost:4000/${cover}`} alt="" />
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${cover}`} alt="" />
         </Link>
       </div>
       <div className="texts">

@@ -19,7 +19,7 @@ export default function CreatePost() {
     data.append('file', files[0]);
     data.append('category', category); 
         ev.preventDefault();
-        const response= await fetch('http://localhost:4000/post',{
+        const response= await fetch('https://link-start-pop-culture-site.herokuapp.com/post',{
             method:'POST',
             body:data,
             credentials:'include',

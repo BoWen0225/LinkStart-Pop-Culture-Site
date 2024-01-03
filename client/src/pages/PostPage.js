@@ -20,7 +20,7 @@ export default function PostPage() {
   const category = postInfo?.category;
 
   useEffect(() => {
-    fetch(`http://localhost:4000/post/${id}`)
+    fetch(`https://link-start-pop-culture-site.herokuapp.com/post/${id}`)
       .then((response) => {
         response.json().then((postInfo) => {
           setPostInfo(postInfo);
@@ -30,7 +30,7 @@ export default function PostPage() {
 
   useEffect(() => {
     if (category) {
-      let url = `http://localhost:4000/post?cat=${category}`;
+      let url = `https://link-start-pop-culture-site.herokuapp.com/post?cat=${category}`;
       fetch(url)
         .then((response) => response.json())
         .then((fetchedPosts) => {
@@ -47,7 +47,7 @@ export default function PostPage() {
   if (!postInfo) return '';
   
   const handleViewPost = (postId) => {
-    fetch(`http://localhost:4000/view-post/${postId}`, {
+    fetch(`https://link-start-pop-culture-site.herokuapp.com/view-post/${postId}`, {
       method: 'POST',
     })
       .then((response) => response.json())
@@ -64,7 +64,7 @@ export default function PostPage() {
   return (
     <div className="post-page">
       <div className="image">
-        <img src={`http://localhost:4000/${postInfo.cover}`} alt="" />
+        <img src={`https://link-start-pop-culture-site.herokuapp.com/${postInfo.cover}`} alt="" />
       </div>
    
     <div className="contents">
@@ -110,7 +110,7 @@ export default function PostPage() {
         
         {postInfo.author.profilePicture && (
           <img
-            src={`http://localhost:4000/uploads/${postInfo.author.profilePicture}`}
+            src={`https://link-start-pop-culture-site.herokuapp.com/uploads/${postInfo.author.profilePicture}`}
             alt="Profile Picture"
             className="profile-pic"
           />

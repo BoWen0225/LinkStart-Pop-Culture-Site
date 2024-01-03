@@ -22,7 +22,7 @@ export default function Header() {
  
 
   function logout() {
-    fetch("http://localhost:4000/logout", {
+    fetch("https://link-start-pop-culture-site.herokuapp.com/logout", {
       credentials: "include",
       method: "POST",
     });

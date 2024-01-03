@@ -31,7 +31,7 @@ export default function IndexPage() {
   
 
   useEffect(() => {
-    let url = "http://localhost:4000/post";
+    let url = "https://link-start-pop-culture-site.herokuapp.com/post";
     if (category) {
       url += `?cat=${category}`;
     }
@@ -60,7 +60,7 @@ export default function IndexPage() {
   
 
   const handleViewPost = (postId) => {
-    fetch(`http://localhost:4000/view-post/${postId}`, {
+    fetch(`https://link-start-pop-culture-site.herokuapp.com/view-post/${postId}`, {
       method: 'POST',
     })
       .then((response) => response.json())
@@ -136,7 +136,7 @@ useEffect(() => {
     {carousel.map((post, index) => (
       <Link to={`/post/${post._id}`} key={index} onClick={() => handleViewPost(post._id)}>
         <div>
-          <img src={`http://localhost:4000/${post.cover}`} /> 
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${post.cover}`} /> 
           <p className="legend">{post.title}</p>
         </div>
       </Link>
@@ -147,7 +147,7 @@ useEffect(() => {
     {top.slice(3, 6).map((post, index) => (
       <Link to={`/post/${post._id}`} key={index} onClick={() => handleViewPost(post._id)}>
         <div>
-          <img src={`http://localhost:4000/${post.cover}`} /> 
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${post.cover}`} /> 
           <p className="legend">{post.title}</p>
         </div>
         
@@ -166,7 +166,7 @@ useEffect(() => {
     {phonecarousel.map((post, index) => (
       <Link to={`/post/${post._id}`} key={index}  onClick={() => handleViewPost(post._id)}>
         <div>
-          <img src={`http://localhost:4000/${post.cover}`} /> 
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${post.cover}`} /> 
           <p className="legend">{post.title}</p>
         </div>
       </Link>
@@ -177,7 +177,7 @@ useEffect(() => {
     {top.slice(1,2).map((post, index) => (
       <Link to={`/post/${post._id}`} key={index}  onClick={() => handleViewPost(post._id)}>
         <div>
-          <img src={`http://localhost:4000/${post.cover}`} /> 
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${post.cover}`} /> 
           <p className="legend">{post.title}</p>
         </div>
       </Link>
@@ -189,7 +189,7 @@ useEffect(() => {
     {top.slice(2,3).map((post, index) => (
       <Link to={`/post/${post._id}`} key={index}  onClick={() => handleViewPost(post._id)}>
         <div>
-          <img src={`http://localhost:4000/${post.cover}`} /> 
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${post.cover}`} /> 
           <p className="legend">{post.title}</p>
         </div>
       </Link>
@@ -202,7 +202,7 @@ useEffect(() => {
     {top.slice(3,4).map((post, index) => (
       <Link to={`/post/${post._id}`} key={index}  onClick={() => handleViewPost(post._id)}>
         <div>
-          <img src={`http://localhost:4000/${post.cover}`} /> 
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${post.cover}`} /> 
           <p className="legend">{post.title}</p>
         </div>
       </Link>

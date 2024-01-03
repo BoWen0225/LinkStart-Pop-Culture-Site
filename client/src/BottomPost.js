@@ -17,7 +17,7 @@ export default function BottomPost({_id, title, category, summary, cover, create
           style={{ cursor: 'pointer' }}
           onClick={handleView}
         >
-          <img src={`http://localhost:4000/${cover}`} alt="" />
+          <img src={`https://link-start-pop-culture-site.herokuapp.com/${cover}`} alt="" />
         </div>
       </div>
       <div className="texts">
