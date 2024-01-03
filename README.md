@@ -9,7 +9,7 @@
 <h2>About the project</h2>
 <p>MERN Stack pop culture site featuring user posts written posts accompanied by fun and modern visuals. Posts and user information are uploaded to MongoDB database with password encryption</p>
 
-👉 Live Demo:<a href='https://link-start-pop-culture-site-13s3o440b-bowen0225.vercel.app'>J-Street Clothing Store Demo</a>
+👉 Live Demo:<a href='https://link-start-pop-culture-site-13s3o440b-bowen0225.vercel.app'>Demo (Backend Currently Unhosted)</a>
 
 
 <h3>Built with:</h3>
