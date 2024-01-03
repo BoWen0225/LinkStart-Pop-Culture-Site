@@ -1,0 +1,987 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  cursor: pointer;
+}
+body{
+  color: #222;
+  
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+time{
+  color: #6d6d6d;
+  font-size: 0.7rem;
+  justify-content: baseline;
+
+}
+header{
+  position:fixed;
+  top: 0;
+  display:flex;
+  justify-content:space-between;
+  width: 100%;
+  background-color: #fff; 
+  z-index: 1000;
+  
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+
+}
+header a{
+  text-decoration:none;
+  color: inherit;
+}
+header a.logo{
+  width:18rem;
+  min-width:18rem;
+  
+  margin-left:20%;
+ 
+}
+div.phone{
+  width:40rem;
+  margin:auto;
+}
+div.logo-phone-container{
+margin: auto;
+}
+.logo-phone img {
+  width: 15rem;
+  margin-left:40%;
+
+}
+header nav{
+  display:flex;
+  gap: 24px;
+}
+
+
+div.post {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom: 30px;
+
+
+}
+div.post3 {
+  
+    margin-right:2rem;
+  
+  
+  margin-bottom: 30px;
+
+
+}
+.title{
+  margin-top:0rem;
+  margin-bottom: 0.2rem;
+}
+
+div.top-post {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.sns-links{
+  margin-top:0rem;
+  margin-bottom: 0.5rem;
+}
+.sns-icon img{
+  margin-top:0rem;
+  width:2.5rem;
+  height:auto;
+  margin-right: 0.7rem;
+}
+
+.icon{
+  display: block;
+  height:2rem;
+  width: 2rem;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile{
+
+  height:2rem;
+  width: 2rem;
+  margin-right: 40rem;
+  margin-left: 0;
+}
+
+
+
+
+.icons a{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.icons a.active {
+  background-color: #e0e0e0;
+ 
+}
+
+.icons a:hover{
+  background-color: #e0e0e0;
+
+
+}
+
+
+
+
+div.post div.image{
+  width: 20rem;
+  height: 15.0rem;
+  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
+}
+
+div.post div.image:hover::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
+
+
+
+div.post div.texts h2{
+  margin:0;
+  font-size: 1.2rem;
+}
+div.post div.texts a{
+  text-decoration:none;
+  color: inherit;
+}
+div.post p.info{
+
+  color: #888;
+  font-size:0.8rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.post p.info a.author{
+  color:#333;
+ 
+  margin-bottom: 0rem;
+  font-size: 0.8rem;
+}
+div.post p.summary{
+  margin:10px 0;
+  line-height: 1 rem;
+}
+
+
+div.post3 div.image{
+  width: 15rem;
+  height: 9.0rem;
+  overflow: hidden;
+ 
+}
+div.post3 div.texts h2{
+  margin:0;
+  font-size: 1.2rem;
+}
+div.post3 div.texts a{
+  text-decoration:none;
+  color: inherit;
+}
+div.post3 p.info{
+
+  color: #888;
+  font-size:0.8rem;
+  font-weight: bold;
+  display: flex;
+
+}
+div.post3 p.info a.author{
+  color:#333;
+}
+div.post3 p.summary{
+  line-height: 1 rem;
+}
+
+div.top-post div.image{
+  width: 5rem;
+  max-height: 5.0rem;
+  overflow: hidden;
+ position: relative;
+}
+div.top-post div.texts h2{
+  margin:0;
+  font-size: 1rem;
+}
+div.top-post div.texts a{
+  text-decoration:none;
+  color: inherit;
+}
+div.top-post p.info{
+  margin:24px 0;
+  color: #888;
+  font-size:0.7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+div.top-post p.info a.author{
+  color:#333;
+}
+div.top-post p.views{
+  margin:10px 0;
+  line-height: 1 rem;
+}
+
+
+form.login, form.register{
+
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: white;
+  padding:1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid #ddd;
+
+  
+
+}
+
+
+form.login p, form.register p{
+  
+ margin-bottom: 0;
+}
+
+input{
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+  padding: 5px 7px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+button{
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  background-color: #555;
+  border:0;
+  color: #fff;
+  border-radius: 5px;
+  padding: 7px 0;
+  
+}
+
+.auth-button:hover{
+  background-color: #66DAFF;
+  color: #ffffff;
+
+}
+
+form.login h1, form.register h1{
+  text-align: center;
+}
+div.post-page{
+  margin-top: 5rem;
+}
+
+div.post-page div.image{
+  max-height:500px;
+  display: flex;
+  overflow:hidden;
+}
+div.post-page div.image img{
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+}
+div.post-page a{
+  color:#333;
+  text-decoration: underline;
+}
+div.post-page h1{
+  text-align: center;
+  margin: 10px 0 5px;
+}
+
+div.post-page div.author{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+div.content p{
+  line-height: 1.7rem;
+  margin: 30px 0;
+}
+div.content li{
+  margin-bottom: 10px;
+}
+div.edit-row{
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.post-page a.edit-btn{
+  background-color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  padding:15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+div.post-page .summary{
+  font-size: 1.2rem;
+  color:#6d6d6d;
+  margin-top: 0rem;;
+}
+a svg{
+  height:20px;
+}
+
+.author {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center; 
+  justify-content: left; 
+}
+
+.profile-pic {
+  height: 30px;
+  width: auto; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  
+}
+
+.profile-pic2{
+  height: 20px;
+  width: auto;
+  border-radius: 50%;
+  object-fit: cover; 
+  
+}
+.category-gaming {
+  text-align: center;
+  justify-content: center;
+  width: 60px;
+  background-color: #ff6666;
+  color: white; 
+  display: "inline-block";
+  padding: "5px 10px";
+}
+
+.category-technology {
+  text-align: center;
+  justify-content: center;
+  width: 60px;
+  background-color: #ffd666; 
+  color: white; 
+  display: "inline-block";
+  padding: "5px 10px";
+}
+
+.category-shows {
+  text-align: center;
+  justify-content: center;
+  width: 90px;
+  background-color: #667dff;
+  color: white;
+  display: "inline-block";
+  padding: "5px 10px";
+}
+
+.category-movies {
+  text-align: center;
+  justify-content: center;
+  width: 60px;
+  background-color: #46e468;
+  color: white;
+  display: "inline-block";
+  padding: "5px 10px";
+}
+
+.posts-container {
+  
+  display: grid;
+  
+  grid-template-columns: 2fr 1fr;
+  column-gap: 0px; 
+}
+
+
+.all {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.posts {
+  grid-column: 1;
+  margin-right: 0rem;
+  width:50rem;
+  margin-left: 20rem;
+
+}
+
+
+
+.posts-container2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  column-gap: 0px; 
+}
+
+.posts2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+}
+
+.searchbar {
+  grid-column: 2;
+  margin-top: 0;
+
+
+  margin-bottom: 3rem;
+  
+}
+
+.top-posts {
+  grid-column: 2; 
+
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border: 2px solid #ddd;
+
+}
+
+.pagination{
+  margin-left:38%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top:0;
+  
+}
+
+.results-container{
+  margin: auto;
+  margin-top: 10rem;
+  width:60rem;
+  
+}
+.results-container h1{
+  background-image: url('./img/title-bar.PNG');
+
+}
+
+.pagination .rightarrow img{
+  width: 1rem;
+  height: auto;
+  object-fit: contain;
+ 
+}
+.pagination .leftarrow img{
+  width: 1rem;
+  height: auto;
+  object-fit: contain;
+ 
+}
+.pagination .rightarrow {
+  width: 2.5rem; 
+  height: 2.5rem;
+  border: 3px solid #424242; 
+  border-radius: 5px;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  
+  background-color: #424242;
+}
+.pagination .leftarrow {
+  width: 2.5rem; 
+  height: 2.5rem;
+  border: 3px solid #424242;
+  border-radius: 5px;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #424242;
+  margin-right: 0.5rem;
+}
+.pagination .numbers {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid #424242; 
+  border-radius: 5px;
+  padding: 5px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #424242;
+  color:white;
+  text-decoration: none;
+  
+  margin-right: 0.5rem;
+  
+  
+}
+.pagination .numbers:hover {
+  background-color: #66DAFF;
+  border: 3px solid #66DAFF;
+}
+
+.pagination .leftarrow:hover {
+  background-color: #66DAFF;
+  border: 3px solid #66DAFF;
+}
+
+.pagination .rightarrow:hover {
+  background-color: #66DAFF;
+  border: 3px solid #66DAFF;
+}
+.pagination .numbers.current-page {
+  background-color: #6d6d6d;
+  border: 3px solid #6d6d6d; 
+  
+}
+
+
+.contents{
+  margin-left: 25%;
+  margin-right:25%;
+}
+
+.posts-title{
+  margin-left:20rem;
+  margin-right:5rem;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-left: 10px solid rgb(104, 225, 247);
+  background-image: url('./img/title-bar.PNG');
+  background-size: cover;
+  
+
+}
+.posts-title.technology {
+
+  border-left: 10px solid #ffd666;
+
+
+}
+
+.posts-title.gaming {
+  border-left: 10px solid #ff6666;
+}
+
+.posts-title.shows {
+  border-left: 10px solid #667dff;
+}
+
+.posts-title.movies {
+  border-left: 10px solid #46e468;
+}
+.username{
+  margin-right:1rem;
+}
+.directory{
+  color:#DF3F3F;
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+h4{
+  font-size:3rem;
+  margin-bottom: 0rem;
+}
+
+
+
+div.colored-line {
+  background-color: #333;
+  height: 0.2rem;
+  width: 100%;
+  margin-top: 2rem;
+  
+}
+h2.read-more{
+  margin-bottom: 0;
+  margin-top:0.7rem;
+  margin-left:0;
+}
+  
+.post-divider {
+  height: 2px;
+  background-color:#8d8d8d;
+  margin-bottom: 1.5rem;
+  width:100%;
+
+
+}
+.date{
+  font-size: 0.6rem;
+  justify-content: center;
+  height:1rem;
+  margin-top:0.7rem;
+}
+.sidebar{
+  width:20rem;
+}
+.twitter-timeline{
+  width:20rem;
+}
+.ranking-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #DF3F3F;
+  padding: 5px;
+  width:1.5rem;
+  height:1.5rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  
+}
+
+.Ranking{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+
+}
+
+.prize-container {
+  height: 3rem; 
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+
+}
+
+.prize {
+  max-width: 100%; 
+  max-height: 100%; 
+  display: block;
+ 
+  
+}
+h3{
+  margin-bottom: 1rem;
+}
+
+.login-background{
+  height:50rem;
+  padding-top:20rem;
+  
+  background-image: url('./img/login-background.PNG');
+  background-size: cover;
+  
+
+}
+
+@media screen and (max-width: 1200px) {
+  .icons{
+    margin-left: 5rem;
+  }
+  .icons a{
+  
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .profile{
+
+    height:2rem;
+    width: 2rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
+    
+  }
+  header a.logo{
+    width:18rem;
+    min-width:18rem;
+    
+    margin-left:10%;
+   
+  }
+  .posts {
+    grid-column: 1; 
+
+    width:30rem;
+    margin-left:5%;
+
+    height: 80%;
+  
+  
+  }
+  .posts-title{
+    margin-left:5%;
+    margin-right:5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-left: 10px solid rgb(104, 225, 247);
+    background-image: url('./img/title-bar-small.PNG');
+    background-size: cover;
+    
+  
+  }
+  div.post div.image{
+    width: 15rem;
+    height: 10.0rem;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  div.posts-container {
+  
+    height: 80%;
+  }
+
+  .pagination{
+    margin-left:25%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top:0;
+    
+  }
+  div.post3 div.image{
+    width: 9rem;
+    height: 6.0rem;
+    overflow: hidden;
+   
+  }
+  div.post3 {
+  
+    margin-right:1rem;
+  
+  
+  margin-bottom: 30px;
+
+
+}
+.contents{
+  margin-left: 5%;
+  margin-right:5%;
+}
+}
+
+@media screen and (max-width: 1900px) {
+ 
+  .profile{
+
+   
+    margin-left: 30%;
+  
+}
+}
+
+
+
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333; 
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.drawer a {
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+  transition: 0.3s;
+  padding:1.5rem;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.drawer-image{
+  width:2rem;
+  margin-right:0.5rem;
+}
+
+.drawer a:hover {
+  background-color: #eee;
+}
+.drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.drawer-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+
+.drawer-close::before,
+.drawer-close::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background-color: #333;
+  transition: 0.3s;
+}
+
+.drawer-close::before {
+  transform: rotate(45deg);
+}
+
+.drawer-close::after {
+  transform: rotate(-45deg);
+}
+
+
+.drawer-close:hover::before,
+.drawer-close:hover::after {
+  background-color: #aaa;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+}
+.phone-logo{
+  margin:auto;
+  
+
+ 
+}
+
+.phone-logo img{
+  width:15rem;
+  
+
+ 
+}
+
+.top-posts-phone{
+margin:auto;
+width:25rem;
+padding: 1rem;
+border: 2px solid #ddd;
+}
+
+.twitter-timeline-phone{
+  width:20rem;
+  margin:auto;
+}
+.Create-Post{
+  margin-top: 30rem;
+}
+
+.searchbar-phone {
+  grid-column: 2; 
+
+width:80%;
+
+  margin:auto;
+  margin-bottom: 3rem;
+  margin-top:0;
+}
+.cross-image {
+  width:1.5rem;
+  margin-right:0.5rem;
+}
+
+.hamburger-menu{
+  margin-left: 2rem;
+}
+
+
+
+

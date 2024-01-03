@@ -1,0 +1,118 @@
+.footer-container {
+    background-color: #707070;
+    color: #fff;
+    width:100%;
+ 
+    
+
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left:20%;
+    
+  }
+  
+  .footer-section {
+    margin-top:2rem;
+    flex: 1;
+    margin-right: 10px;
+    width:10rem;
+    justify-content: center;
+    
+  }
+  .footer-section img{
+    height:10rem;
+
+  }
+  .footer-section h3 {
+    font-size: 18px;
+    width:10rem;
+    
+  }
+  .footer-section p {
+   margin-bottom: 0;
+   width:12rem;
+    
+  }
+
+  .footer-section-logo {
+    margin-top:5rem;
+    flex: 1;
+
+  }
+  .footer-section-logo img{
+    height:10rem;
+  }
+  .footer-section-logo h3 {
+    font-size: 18px;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .footer-bottom {
+    margin-top: 1rem;
+    
+    text-align: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  .logo{
+    width:30rem;
+  }
+
+  .footer-divider {
+    height: 2px;
+    background-color:#ffffff; /* Replace with your desired color */
+    margin-bottom: 1.5rem; /* Adjust the margin as needed */
+    margin:auto;
+    width:80%;
+  
+  
+  }
+
+  @media screen and (max-width: 1200px) {
+    .footer-section-logo img{
+      height:7rem;
+    }
+
+    .footer-content {
+
+      margin-left:10%;
+      
+    }
+    .footer-section h3 {
+      font-size: 12px;
+      width:10rem;
+      
+    }
+    .footer-section p {
+      font-size: 10px;
+      width:10rem;
+      
+    }
+    .footer-section {
+      font-size: 12px;
+      width:5rem;
+      
+    }
+    .logo{
+      width:1px;
+    }
+  }
