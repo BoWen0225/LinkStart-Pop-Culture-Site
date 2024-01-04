@@ -14,7 +14,7 @@ const fs = require('fs');
 const salt=bcrypt.genSaltSync(10);
 const secret ="wgaheshshsehs"
 
-app.use(cors({credentials:true,origin:""}));
+app.use(cors({credentials:true,origin:"https://link-start-pop-culture-site-13s3o440b-bowen0225.vercel.app"}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads',express.static(__dirname +'/uploads' ));
