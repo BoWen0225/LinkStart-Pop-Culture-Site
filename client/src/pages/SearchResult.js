@@ -10,7 +10,7 @@ export default function SearchResults() {
   const searchQuery = queryParams.get("title");
   
   useEffect(() => {
-    fetch("http://localhost:4000/post")
+    fetch("https://link-start-pop-culture-site.herokuapp.com/post")
       .then((response) => response.json())
       .then((allPosts) => {
         const filteredPosts = allPosts.filter((post) => 
